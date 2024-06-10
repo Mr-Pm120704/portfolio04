@@ -1,5 +1,5 @@
 <?php  //$pass_sts=0;
-     include "connection.php";	
+  include "connection.php";	
   if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         $name=$_POST["name"];
