@@ -48,7 +48,7 @@
 	//echo($query2);
 	
 	//$res=$conn->query($query2);
-	$conn = mysqli_connect("localhost","root","","resume");
+	$conn = mysqli_connect("bxz3ducvbt8zlq5eftua-mysql.services.clever-cloud.com","uckfjannptteicuc","Cj4sJBsBzhuHLv5D0LeH","bxz3ducvbt8zlq5eftua");
 	$query3="select * from customer";
 		//echo($query3);
 		$res1=$conn->query($query3);

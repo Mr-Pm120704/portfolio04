@@ -28,7 +28,7 @@
 		echo("Password mismatch");
 	}*/
 	else{
-	$conn = mysqli_connect("localhost","root","","resume");
+	$conn = mysqli_connect("bxz3ducvbt8zlq5eftua-mysql.services.clever-cloud.com","uckfjannptteicuc","Cj4sJBsBzhuHLv5D0LeH","bxz3ducvbt8zlq5eftua");
 	if($conn->connect_error){
 		echo "<script>alert('Error sending message')</script>";
 	}
