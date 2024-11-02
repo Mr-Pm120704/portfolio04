@@ -120,11 +120,85 @@
                 
               </div>
             </form>
-          
+            <!-- Include EmailJS library -->         
+            
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script>
+              // Initialize EmailJS
+              emailjs.init("ZfqsnFMxu1QUJbGh_");
+            
+              // Add event listener to the form
+              document.getElementById('contactForm').addEventListener('submit', function(event) {
+                  event.preventDefault(); // Prevent the form from submitting the traditional way
+            
+                  // Send form data via EmailJS
+                  emailjs.sendForm('service_om73wjn', 'template_ravgn8g', this)
+                      .then(function(response) {
+                          alert('Message sent successfully!');
+                          window.location.href = 'thankyou.html';
+                      }, function(error) {
+                          alert('Failed to send message: ' + error.text);
+                      });
+              });
+            </script>          
           </div>
-
           <div class="col-md-6 d-flex">
           	<div class="img" style="background-image: url(images/about.png);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">SOCIALMEDIAS</h1>
+            <h2 class="mb-4">Contact Me On</h2>
+            <p>You Can Contect Me From The Following Social Media's Links</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="https://www.linkedin.com/in/muruganandham-p"><span class="icon-linkedin"></span></a>
+          		</div>
+	            <p><a href="https://www.linkedin.com/in/muruganandham-p">LINKEDIN </a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="https://github.com/Mr-Pm120704"><span class="icon-github"></span></a>
+          		</div>
+	            <p><a href="https://github.com/Mr-Pm120704">GITHUB</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="https://mr-pm120704.github.io/portfolio04/"><span class="icon-globe"></span></a>
+          		</div>
+	            <p><a href="https://mr-pm120704.github.io/portfolio04/">MYPORTFOLIO</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="#"><span class="icon-globe"></span></a>
+          		</div>
+	            <p><a href="#">LEEDCODE</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<a href="#"><span class="icon-globe"></span></a>
+          		</div>
+	            <p><a href="#">HACKERRANK</a></p>
+	          </div>
           </div>
         </div>
       </div>
